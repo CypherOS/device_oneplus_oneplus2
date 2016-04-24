@@ -28,10 +28,15 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
+<<<<<<< HEAD
         if (Utils.isDozeEnabled(context) && Utils.sensorsEnabled(context)) {
             if (DEBUG) Log.d(TAG, "Starting service");
             Utils.startService(context);
         }
+=======
+        if (DEBUG) Log.d(TAG, "Starting service");
+        context.startService(new Intent(context, OneplusDozeService.class));
+>>>>>>> a4feaa4... oneplus2: add doze package
     }
 
 }

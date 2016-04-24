@@ -9,6 +9,12 @@ LOCAL_PACKAGE_NAME := OneplusDoze
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 
+<<<<<<< HEAD
+=======
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    org.cyanogenmod.platform.internal
+
+>>>>>>> a4feaa4... oneplus2: add doze package
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include $(BUILD_PACKAGE)

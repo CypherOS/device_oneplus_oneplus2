@@ -5,7 +5,13 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+=======
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+>>>>>>> a4feaa4... oneplus2: add doze package
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-sdk
@@ -23,13 +29,21 @@
             </intent-filter>
         </receiver>
 
+<<<<<<< HEAD
         <service android:name="com.cyanogenmod.settings.doze.DozeService"
+=======
+        <service android:name="com.cyanogenmod.settings.doze.OneplusDozeService"
+>>>>>>> a4feaa4... oneplus2: add doze package
                  android:permission="OneplusDozeService">
         </service>
 
         <activity
             android:name=".DozeSettings"
+<<<<<<< HEAD
             android:label="@string/ambient_display_title"
+=======
+            android:label="@string/screen_gestures_panel_title"
+>>>>>>> a4feaa4... oneplus2: add doze package
             android:theme="@android:style/Theme.Material.Settings">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
