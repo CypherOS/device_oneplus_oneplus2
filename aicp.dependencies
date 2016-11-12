@@ -1,0 +1,22 @@
+[
+  {
+    "repository":  "AICP/device_oppo_common",
+    "target_path": "device/oppo/common",
+    "branch":      "n7.1"
+  },
+  {
+    "repository":  "CyanogenMod/android_kernel_oneplus_msm8994",
+    "target_path": "kernel/oneplus/msm8994",
+    "branch":      "cm-14.1"
+  },
+  {
+   "repository": "TheMuppets/proprietary_vendor_qcom_binaries",
+   "target_path": "vendor/qcom/binaries",
+   "branch":      "cm-14.1"
+  },
+  {
+    "repository":  "AICP/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "branch":      "n7.1"
+  }
+]
