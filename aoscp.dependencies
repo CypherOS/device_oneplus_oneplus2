@@ -6,21 +6,21 @@
 	"remote":      "aoscp"
   },
   {
-    "repository":  "android_kernel_oneplus_msm8994",
+    "repository":  "kernel_oneplus_msm8994",
     "target_path": "kernel/oneplus/msm8994",
-    "branch":      "cm-14.1",
-	"remote":      "cm"
+    "branch":      "n7.1",
+	"remote":      "aoscp"
   },
   {
    "repository":  "proprietary_vendor_qcom_binaries",
    "target_path": "vendor/qcom/binaries",
-   "branch":      "cm-14.1",
-   "remote":      "tm"
+   "branch":      "n7.1",
+   "remote":      "aoscp"
   },
   {
     "repository":  "proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
     "branch":      "n7.1",
-	"remote":      "aicp"
+	"remote":      "aoscp"
   }
 ]
