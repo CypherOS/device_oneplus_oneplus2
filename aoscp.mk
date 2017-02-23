@@ -33,6 +33,7 @@ PRODUCT_NAME := aoscp_oneplus2
 PRODUCT_DEVICE := oneplus2
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
+PRODUCT_MODEL := OnePlus2
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
