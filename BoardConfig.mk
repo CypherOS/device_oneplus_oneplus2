@@ -214,7 +214,6 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Hardware
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/aoscphw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap"
 
 # inherit from the proprietary version

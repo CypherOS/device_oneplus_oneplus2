@@ -141,6 +141,13 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">64</integer>
+	
+	<!-- The list absolute paths of jar/apk files containing the device specific handlers,
+        delimited by File.pathSeparator, which defaults to ":" on Android -->
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/Oneplus2Parts/Oneplus2Parts.apk</string>
+    <!-- Full qualified name of the class that implements
+        com.android.internal.os.DeviceKeyHandler interface. -->
+    <string name="config_deviceKeyHandlerClass" translatable="false">org.omnirom.device.KeyHandler</string>
 
     <!-- Control the behavior when the user long presses the home button
             0 - Nothing
