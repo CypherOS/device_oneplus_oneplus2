@@ -104,8 +104,7 @@ PRODUCT_PACKAGES += \
     camera.msm8994 \
     libshim_camera \
     libshim_ims-camera \
-    sensors.hal.tof \
-    Camero
+    sensors.hal.tof
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -275,6 +274,10 @@ PRODUCT_COPY_FILES += \
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
+	
+# OnePlusParts
+PRODUCT_PACKAGES += \
+    Oneplus2Parts
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
