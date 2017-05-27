@@ -20,9 +20,6 @@
 # definition file).
 #
 
-# Inherit from oneplus-common
--include device/oneplus/common/BoardConfigCommon.mk
-
 TARGET_OTA_ASSERT_DEVICE := OnePlus2,oneplus2
 
 PLATFORM_PATH := device/oneplus/oneplus2
@@ -213,7 +210,8 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
-# Hardware
+# Gestures
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap"
 
 # inherit from the proprietary version
