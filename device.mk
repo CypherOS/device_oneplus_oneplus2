@@ -274,10 +274,3 @@ PRODUCT_COPY_FILES += \
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
-	
-# OnePlusParts
-PRODUCT_PACKAGES += \
-    Oneplus2Parts
-
-# Inherit from oneplus-common
-$(call inherit-product, device/oneplus/common/common.mk)
