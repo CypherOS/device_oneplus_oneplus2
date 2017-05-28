@@ -213,7 +213,8 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
-# Hardware
+# Gestures
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap"
 
 # inherit from the proprietary version
