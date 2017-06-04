@@ -214,8 +214,19 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Gestures
+TARGET_POWER_GESTURE_FILE := $(PLATFORM_PATH)/power/gestures.c
 TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap"
+TARGET_DRAW_V_NODE := "/proc/touchpanel/draw_v"
+TARGET_DRAW_INVERSE_V_NODE := "/proc/touchpanel/draw_reversed_v"
+TARGET_DRAW_O_NODE := "/proc/touchpanel/draw_circle"
+TARGET_DRAW_ARROW_LEFT_NODE := "/proc/touchpanel/draw_left_v"
+TARGET_DRAW_ARROW_RIGHT_NODE := "/proc/touchpanel/draw_right_v"
+TARGET_ONE_FINGER_SWIPE_UP_NODE := "/proc/touchpanel/up_swipe"
+TARGET_ONE_FINGER_SWIPE_DOWN_NODE := "/proc/touchpanel/down_swipe"
+TARGET_ONE_FINGER_SWIPE_LEFT_NODE := "/proc/touchpanel/left_swipe"
+TARGET_ONE_FINGER_SWIPE_RIGHT_NODE := "/proc/touchpanel/right_swipe"
+TARGET_TWO_FINGER_SWIPE_NODE := "/proc/touchpanel/double_swipe"
 
 # inherit from the proprietary version
 -include vendor/oneplus/oneplus2/BoardConfigVendor.mk
