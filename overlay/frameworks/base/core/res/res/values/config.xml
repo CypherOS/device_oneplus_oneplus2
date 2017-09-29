@@ -337,6 +337,9 @@
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
    </string-array>
    
+   <!-- Keep chosen default camera app pinned in memory for faster launching -->
+    <bool name="config_pinnerCameraApp">true</bool>
+   
    <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
          of the following keys present:
