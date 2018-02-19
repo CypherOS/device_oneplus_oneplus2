@@ -120,7 +120,6 @@ PRODUCT_PACKAGES += \
     libshim_ims-camera \
     libshim_atomic \
     libshim_cameraparameters \
-    Snap \
     sensors.hal.tof
 
 # DRM
@@ -142,10 +141,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8994 \
     liboverlay \
     libtinyxml
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    OneplusDoze
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -337,5 +332,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/wifi/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# Inherit from oneplus-common
+$(call inherit-product, device/oneplus/common/common.mk)

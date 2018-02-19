@@ -21,8 +21,8 @@
 # definition file).
 #
 
-# Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
+# Inherit from oneplus-common
+-include device/oneplus/common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := OnePlus2,oneplus2
 
@@ -108,8 +108,6 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/lineagehw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap"
 
 # Cpusets
