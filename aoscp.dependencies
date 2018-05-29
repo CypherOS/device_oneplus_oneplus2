@@ -1,0 +1,12 @@
+[
+  {
+    "repository":  "device_oneplus_common",
+    "target_path": "device/oneplus/common",
+	"remote":      "aoscp"
+  },
+  {
+    "repository":  "kernel_oneplus_msm8994",
+    "target_path": "kernel/oneplus/msm8994",
+	"remote":      "aoscp"
+  }
+]
