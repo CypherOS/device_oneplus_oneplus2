@@ -119,8 +119,7 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     libqomx_core \
     libshim_atomic \
-    sensors.hal.tof \
-    Snap
+    sensors.hal.tof
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -141,10 +140,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8994 \
     liboverlay \
     libtinyxml
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    OneplusDoze
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -211,10 +206,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     lights.msm8994
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-legacymm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -318,10 +309,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2017-10-01
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
@@ -341,5 +328,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/wifi/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# Inherit from oneplus-common
+$(call inherit-product, device/oneplus/common/common.mk)
